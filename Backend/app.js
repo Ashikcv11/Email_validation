@@ -7,16 +7,9 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
-
-
-
-
 app.use(cors());
 app.use(express.json({urlencoded:true}));
-
 app.use(express.static('dist/frontend'));
-
-
 
 app.post('/email',(req,res)=>{
     // alert("connected")
